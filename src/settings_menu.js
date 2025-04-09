@@ -43,6 +43,7 @@ export function reset_display(){
 
 
 
+
 function formatInput(input) {
     const max = parseInt(input.max);
     let value = parseInt(input.value);
