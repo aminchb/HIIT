@@ -22,6 +22,8 @@ export function toggle_menu(){
 
 }
 
+window.toggle_menu = toggle_menu;
+
 export function reset_display(){
     start_button.classList.remove("hidden");
 
@@ -36,6 +38,8 @@ export function reset_display(){
     });
     console.log("DISPLAY RESET : OK.");
 }
+
+// window.reset_display = reset_display;
 
 
 
