@@ -66,6 +66,8 @@ function set_rest_time() {
     console.log("SET REST TIME : " + rest_time);  
 }
 
+window.set_rest_time = set_rest_time;
+
 
 
 
