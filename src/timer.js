@@ -34,8 +34,10 @@ function reset_timer(){
 
 
 function set_rest_time() {
-    toggle_menu();
-    /*settings_button.classList.toggle("hidden");*/
+    console.log("SET REST TIME : OK.");
+    //toggle_menu();
+    /*
+    settings_button.classList.toggle("hidden");
 
     let minutes = parseInt(document.getElementById("rest-minutes").value) || 0;
     let seconds = parseInt(document.getElementById("rest-seconds").value) || 0;
@@ -48,18 +50,19 @@ function set_rest_time() {
         const message = document.createElement("div");
         message.textContent = "⏱️ Temps de repos enregistré !";
         message.className = "confirmation-message";
-        /*message.style.color = "white";*/
+        //message.style.color = "white";
         settings_section.appendChild(message);
 
         // Supprimer le message après 2 secondes
         setTimeout(() => {
             message.remove();
-            /*settings_button.classList.toggle("hidden");*/
+            //settings_button.classList.toggle("hidden");
         }, 1000);
         console.log("SET REST TIME : " + rest_time);
         return;
     }
     rest_time = 0;
+    */
     console.log("SET REST TIME : " + rest_time);  
 }
 
