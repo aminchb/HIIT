@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- WINDOW TITLE -->
+    <title>HIIT : Web Chronometer</title>
+    <!-- WINDOW ICON -->
+    <link rel="icon" href="img/logo.ico" type="image/x-icon">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <a class="logo-text" href="index.html">
+            <!-- WEBSITE LOGO -->
+            <img class="logo" src="img/logo.svg" alt="Logo">
+            <!-- WEBSITE NAME -->
+            <h1>HIIT</h1>
+        </a>
+    </nav>
+    <main>
+        <!-- START -->
+
+        <!-- CHRONO -->
+        <div class="container">
+            <div class="chrono-title">TIMER SETTING :</div>
+            <div id="CHRONO" class="chrono">
+                <div class="minutes">
+                    <input class="input chrono-input" id="chrono-minutes" type="number" value="00" min="00" max="59">
+                    <div>Minutes</div>
+                </div>
+                <div class="chrono-splitter">:</div>
+                <div class="seconds">
+                    <input class="input chrono-input" id="chrono-seconds" type="number" value="00" min="00" max="59">
+                    <div>Seconds</div>
+                </div>
+                <div class="chrono-splitter">:</div>
+                <div class="hundreths">
+                    <input class="input chrono-input" id="chrono-hundreths" type="number" value="00" min="00" max="99">
+                    <div>Hundreths</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BUTTON START -->
+        <div class="container">
+            <button id="START" onclick="start_pause_chrono(this)" class="button light">START</button>
+        </div>
+        
+        <!-- BUTTON SETTINGS -->
+        <div id="SETTINGS-SECTION" class="container hide-settings">
+            <button id="SETTINGS-BUTTON" onclick="toggle_menu()" class="button light">&#11167</button>
+            <div class="hidden" id="SETTINGS">
+                <div class="settings-title show">REST TIME SETTING :</div>
+                <div class="chrono settings">
+                    <div class="minutes">
+                        <input class="input settings-input" id="rest-minutes" type="number" value="00" min="00" max="59">
+                        <div class="settings-tags">Minutes</div>
+                    </div>
+                    <div class="settings-splitter">:</div>
+                    <div class="seconds">
+                        <input class="input settings-input" id="rest-seconds" type="number" value="00" min="00" max="59">
+                        <div class="settings-tags">Seconds</div>
+                    </div>
+                    <div class="settings-splitter">:</div>
+                    <div class="hundreths">
+                        <input class="input settings-input" id="rest-hundreths" type="number" value="00" min="00" max="99">
+                        <div class="settings-tags">Hundreths</div>
+                    </div>
+                </div>
+                <button onclick="set_rest_time()" class="button dark">OK</button>
+            </div>
+        </div>
+        
+
+        
+            
+
+        <!-- END -->
+    </main>
+
+    <!-- SCRIPTS -->
+    <script src="scripts/version.js"></script>
+    <script src="scripts/page_load.js"></script>
+
+    <script type="module" src="src/settings_menu.js"></script>
+    <script type="module" src="src/timer.js"></script>
+
+</body>
+</html>

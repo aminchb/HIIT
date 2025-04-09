@@ -1,0 +1,138 @@
+/* GLOBAL VARIABLES */
+:root {
+    --chrono-size: 100px;
+}
+
+/* REMOVE INPUT STANDARD ARROWS */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    text-align: center;
+    background: transparent;
+    border: none;               
+    outline: none;
+    width: 2ch;
+}
+
+.chrono input {
+    font-size: 100px;
+    color: black;  
+}
+
+.settings input {
+    font-size: 50px;
+    color: white;
+    width: 100px;
+}
+
+.settings-splitter {
+    font-size: 25px;
+    padding-bottom: 12px;
+    color: white;
+}
+
+.minutes, .seconds, .hundreths {
+    text-align: center;
+}
+
+.chrono-title {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    padding-bottom : 30px;
+}
+
+.chrono-splitter {
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+
+/* CSS CLASSES */
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.rest input {
+    color: red;
+}
+
+button {
+    transition: transform .3s ease;
+    padding : 15px;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: transparent;
+    font-weight: bold;
+    margin: 15px;
+    transform: scale(1.0);
+}
+
+.light {
+    color: black;
+    border: 3px solid black;
+}
+
+.dark {
+    color: white;
+    border: 3px solid white;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+
+.chrono {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+}
+
+.settings {
+    color : white;
+}
+
+.settings-tags {
+    font-size: 12px;
+    color: white;
+}
+
+
+.show-settings {
+    background-color: black;
+}
+
+.hide-settings {
+    background-color: transparent;
+}
+
+.settings-title {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.button:hover {
+    transition: transform .3s ease;
+    transform: scale(1.10); /* Agrandit de 5% */
+}
+
